@@ -7,7 +7,9 @@
             "email": "maltehuebner@gmx.org"
         }
     ],
-    "require": {},
+    "require": {
+        "jms/serializer": "^3.10"
+    },
     "autoload": {
         "psr-4": {
             "Caldera\\LuftModel\\": "src"
