@@ -7,5 +7,10 @@
             "email": "maltehuebner@gmx.org"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Caldera\\LuftModel\\": "src"
+        }
+    }
 }

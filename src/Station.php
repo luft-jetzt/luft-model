@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Caldera\LuftApiBundle\Model;
+namespace Caldera\LuftModel;
 
 use JMS\Serializer\Annotation as JMS;
 
