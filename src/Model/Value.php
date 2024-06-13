@@ -2,41 +2,12 @@
 
 namespace Caldera\LuftModel\Model;
 
-use JMS\Serializer\Annotation as JMS;
-
-/**
- * @JMS\ExclusionPolicy("ALL")
- */
 class Value
 {
-    /**
-     * @JMS\Expose()
-     * @JMS\Type("string")
-     */
     protected ?string $stationCode = null;
-
-    /**
-     * @JMS\Expose()
-     * @JMS\Type("DateTime<'U'>")
-     */
     protected ?\DateTime $dateTime = null;
-
-    /**
-     * @JMS\Expose()
-     * @JMS\Type("float")
-     */
     protected ?float $value = null;
-
-    /**
-     * @JMS\Expose()
-     * @JMS\Type("string")
-     */
     protected ?string $pollutant = null;
-
-    /**
-     * @JMS\Expose()
-     * @JMS\Type("string")
-     */
     protected ?string $tag = null;
 
     public function __construct()
