@@ -2,78 +2,20 @@
 
 namespace Caldera\LuftModel\Model;
 
-use JMS\Serializer\Annotation as JMS;
-
-/**
- * @JMS\ExclusionPolicy("ALL")
- */
 class Station
 {
-    /**
-     * @JMS\Expose()
-     */
     protected ?string $stationCode = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?int $ubaStationId = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?string $title = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?float $latitude = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?float $longitude = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?string $cityName = null;
-
-    /**
-     * @JMS\Expose()
-     * @JMS\Type("DateTime<'U'>")
-     */
     protected ?\DateTime $fromDate = null;
-
-    /**
-     * @JMS\Expose()
-     * @JMS\Type("DateTime<'U'>")
-     */
     protected ?\DateTime $untilDate = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?int $altitude = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?string $stationType = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?string $areaType = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?string $provider = null;
-
-    /**
-     * @JMS\Expose()
-     */
     protected ?string $network = null;
 
     public function getStationCode(): ?string
