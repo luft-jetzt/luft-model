@@ -20,7 +20,7 @@ class Value
         return $this->stationCode;
     }
 
-    public function setStationCode(string $stationCode): Value
+    public function setStationCode(string $stationCode): self
     {
         $this->stationCode = $stationCode;
 
@@ -32,7 +32,7 @@ class Value
         return $this->dateTime;
     }
 
-    public function setDateTime(\DateTime $dateTime): Value
+    public function setDateTime(\DateTime $dateTime): self
     {
         $this->dateTime = $dateTime;
 
@@ -44,7 +44,7 @@ class Value
         return $this->value;
     }
 
-    public function setValue(float $value): Value
+    public function setValue(float $value): self
     {
         $this->value = $value;
 
@@ -56,7 +56,7 @@ class Value
         return $this->pollutant;
     }
 
-    public function setPollutant(string $pollutant): Value
+    public function setPollutant(string $pollutant): self
     {
         $this->pollutant = $pollutant;
 
@@ -68,7 +68,7 @@ class Value
         return $this->tag;
     }
 
-    public function setTag(string $tag): Value
+    public function setTag(?string $tag = null): self
     {
         $this->tag = $tag;
 

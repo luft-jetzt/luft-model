@@ -23,7 +23,7 @@ class Station
         return $this->stationCode;
     }
 
-    public function setStationCode(string $stationCode): Station
+    public function setStationCode(string $stationCode): self
     {
         $this->stationCode = $stationCode;
 
@@ -35,7 +35,7 @@ class Station
         return $this->ubaStationId;
     }
 
-    public function setUbaStationId(int $ubaStationId): Station
+    public function setUbaStationId(int $ubaStationId): self
     {
         $this->ubaStationId = $ubaStationId;
 
@@ -47,7 +47,7 @@ class Station
         return $this->latitude;
     }
 
-    public function setLatitude(float $latitude): Station
+    public function setLatitude(float $latitude): self
     {
         $this->latitude = $latitude;
 
@@ -59,7 +59,7 @@ class Station
         return $this->longitude;
     }
 
-    public function setLongitude(float $longitude): Station
+    public function setLongitude(float $longitude): self
     {
         $this->longitude = $longitude;
 
@@ -71,14 +71,14 @@ class Station
         return $this->title;
     }
 
-    public function setTitle(string $title = null): Station
+    public function setTitle(string $title = null): self
     {
         $this->title = $title;
 
         return $this;
     }
 
-    public function setCity(string $cityName = null): Station
+    public function setCity(string $cityName = null): self
     {
         $this->cityName = $cityName;
 
@@ -95,7 +95,7 @@ class Station
         return $this->fromDate;
     }
 
-    public function setFromDate(\DateTime $fromDate = null): Station
+    public function setFromDate(\DateTime $fromDate = null): self
     {
         $this->fromDate = $fromDate;
 
@@ -107,7 +107,7 @@ class Station
         return $this->untilDate;
     }
 
-    public function setUntilDate(\DateTime $untilDate = null): Station
+    public function setUntilDate(\DateTime $untilDate = null): self
     {
         $this->untilDate = $untilDate;
 
@@ -119,7 +119,7 @@ class Station
         return $this->altitude;
     }
 
-    public function setAltitude(int $altitude): Station
+    public function setAltitude(int $altitude): self
     {
         $this->altitude = $altitude;
 
@@ -131,7 +131,7 @@ class Station
         return $this->stationType;
     }
 
-    public function setStationType(string $stationType = null): Station
+    public function setStationType(string $stationType = null): self
     {
         $this->stationType = $stationType;
 
@@ -143,7 +143,7 @@ class Station
         return $this->areaType;
     }
 
-    public function setAreaType(string $areaType = null): Station
+    public function setAreaType(string $areaType = null): self
     {
         $this->areaType = $areaType;
 
@@ -155,7 +155,7 @@ class Station
         return $this->provider;
     }
 
-    public function setProvider(string $provider): Station
+    public function setProvider(string $provider): self
     {
         $this->provider = $provider;
 
