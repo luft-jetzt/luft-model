@@ -68,7 +68,7 @@ class Value
         return $this->tag;
     }
 
-    public function setTag(string $tag): Value
+    public function setTag(?string $tag = null): Value
     {
         $this->tag = $tag;
 
