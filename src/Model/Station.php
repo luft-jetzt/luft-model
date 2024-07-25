@@ -119,7 +119,7 @@ class Station
         return $this->altitude;
     }
 
-    public function setAltitude(int $altitude): self
+    public function setAltitude(?int $altitude = null): self
     {
         $this->altitude = $altitude;
 
