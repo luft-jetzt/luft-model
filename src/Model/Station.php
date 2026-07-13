@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Caldera\LuftModel\Model;
 
@@ -71,14 +73,14 @@ class Station
         return $this->title;
     }
 
-    public function setTitle(string $title = null): self
+    public function setTitle(?string $title = null): self
     {
         $this->title = $title;
 
         return $this;
     }
 
-    public function setCity(string $cityName = null): self
+    public function setCity(?string $cityName = null): self
     {
         $this->cityName = $cityName;
 
@@ -95,7 +97,7 @@ class Station
         return $this->fromDate;
     }
 
-    public function setFromDate(\DateTime $fromDate = null): self
+    public function setFromDate(?\DateTime $fromDate = null): self
     {
         $this->fromDate = $fromDate;
 
@@ -107,7 +109,7 @@ class Station
         return $this->untilDate;
     }
 
-    public function setUntilDate(\DateTime $untilDate = null): self
+    public function setUntilDate(?\DateTime $untilDate = null): self
     {
         $this->untilDate = $untilDate;
 
@@ -131,7 +133,7 @@ class Station
         return $this->stationType;
     }
 
-    public function setStationType(string $stationType = null): self
+    public function setStationType(?string $stationType = null): self
     {
         $this->stationType = $stationType;
 
@@ -143,7 +145,7 @@ class Station
         return $this->areaType;
     }
 
-    public function setAreaType(string $areaType = null): self
+    public function setAreaType(?string $areaType = null): self
     {
         $this->areaType = $areaType;
 

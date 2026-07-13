@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Caldera\LuftModel\Model;
 
@@ -10,10 +12,7 @@ class Value
     protected ?string $pollutant = null;
     protected ?string $tag = null;
 
-    public function __construct()
-    {
-
-    }
+    public function __construct() {}
 
     public function getStationCode(): ?string
     {
