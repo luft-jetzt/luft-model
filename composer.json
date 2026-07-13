@@ -1,6 +1,8 @@
 {
     "name": "luft-jetzt/luft-model",
+    "description": "Shared data-transfer objects (Station, Value) for the luft.jetzt air-quality data providers.",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Malte Huebner",
@@ -10,9 +12,25 @@
     "require": {
         "php": "^8.3"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "phpstan/phpstan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.75"
+    },
     "autoload": {
         "psr-4": {
             "Caldera\\LuftModel\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Caldera\\LuftModel\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpstan": "phpstan analyse",
+        "cs-check": "php-cs-fixer fix --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix"
     }
 }
