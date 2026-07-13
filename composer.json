@@ -1,6 +1,8 @@
 {
     "name": "luft-jetzt/luft-model",
+    "description": "Shared data-transfer objects (Station, Value) for the luft.jetzt air-quality data providers.",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Malte Huebner",
@@ -13,6 +15,11 @@
     "autoload": {
         "psr-4": {
             "Caldera\\LuftModel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Caldera\\LuftModel\\Tests\\": "tests"
         }
     }
 }
