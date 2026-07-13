@@ -10,11 +10,6 @@ class Value
     protected ?string $pollutant = null;
     protected ?string $tag = null;
 
-    public function __construct()
-    {
-
-    }
-
     public function getStationCode(): ?string
     {
         return $this->stationCode;
